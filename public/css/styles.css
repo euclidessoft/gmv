@@ -150,7 +150,7 @@ html {
     rgba(14, 165, 233, 0.7) 50%,
     rgba(30, 58, 138, 0.8) 100%);
     z-index: -1; */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 30%, transparent);
+    background: linear-gradient(90deg, rgba(44, 47, 62, 0.7) 30%, transparent);
     width: 100%;
     position: absolute;
     top: 0;
@@ -436,7 +436,7 @@ html {
 
 /* Service Cards */
 #services {
-    background: url(../images/monde-1.jpg);
+    background-image: url(../images/monde-1.avif);
     background-size: cover;
     background-position: center;
 }
@@ -605,7 +605,7 @@ html {
 
 /* Stats Section */
 .stats-section {
-    background: url(../images/monde-3.png), linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: url(../images/monde-3.avif), linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -767,7 +767,7 @@ html {
 
 /* Footer */
 .footer {
-    background: url(../images/footer-bg.png), linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: url(../images/footer-bg.avif), linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     padding: 3rem 0 0 0;
 }
