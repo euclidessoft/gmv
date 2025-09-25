@@ -47,6 +47,10 @@ p {
     color: var(--text-secondary);
 }
 
+a {
+    text-decoration: none;
+}
+
 .lead {
     font-size: 1.125rem;
     font-weight: 400;
