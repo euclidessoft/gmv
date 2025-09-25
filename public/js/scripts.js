@@ -243,15 +243,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Parallax effect for hero section
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const heroImage = document.querySelector('.hero-image');
-        if (heroImage) {
-            const rate = scrolled * -0.5;
-            heroImage.style.transform = `translateY(${rate}px)`;
-        }
-    });
+    // // Parallax effect for hero section
+    // window.addEventListener('scroll', function() {
+    //     const scrolled = window.pageYOffset;
+    //     const heroImage = document.querySelector('.hero-image');
+    //     if (heroImage) {
+    //         const rate = scrolled * -0.5;
+    //         heroImage.style.transform = `translateY(${rate}px)`;
+    //     }
+    // });
 
     // Enhanced hover effects for cards
     const cards = document.querySelectorAll('.service-card, .value-card, .contact-info-card');
