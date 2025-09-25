@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
     floatingContact.innerHTML = `
         <div class="floating-contact" style="
             position: fixed;
-            bottom: 30px;
+            bottom: 20px;
             right: 30px;
             z-index: 1000;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
