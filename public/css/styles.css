@@ -723,7 +723,7 @@ html {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, var(--dark-gray) 0%, #374151 100%);
+    background: url(), linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     padding: 3rem 0 1.5rem;
 }
@@ -760,13 +760,13 @@ html {
 }
 
 .footer-links a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: var(--transition);
 }
 
 .footer-links a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .footer-contact li {
