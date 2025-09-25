@@ -108,9 +108,9 @@ html {
     backdrop-filter: blur(10px);
 }
 
-.bg-light {
+.bg-light-blue {
     --bs-bg-opacity: 1;
-    background-color: rgba(194 229 245 0.3) !important;
+    background-color: rgba(194, 229, 245, 0.3) !important;
 }
 
 /* Hero Section */
@@ -151,7 +151,7 @@ html {
     rgba(30, 58, 138, 0.8) 100%);
     z-index: -1; */
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 30%, transparent);
-    width: 50%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
