@@ -47,6 +47,10 @@ p {
     color: var(--text-secondary);
 }
 
+a {
+    text-decoration: none;
+}
+
 .lead {
     font-size: 1.125rem;
     font-weight: 400;
@@ -104,6 +108,11 @@ html {
     backdrop-filter: blur(10px);
 }
 
+.bg-light {
+       --bs-bg-opacity: 1;
+    background-color: rgb(194 229 245 / 30%) !important;
+}
+
 /* Hero Section */
 .hero-section {
     position: relative;
@@ -131,7 +140,7 @@ html {
 }
 
 .hero-overlay {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -140,7 +149,15 @@ html {
     rgba(30, 64, 175, 0.8) 0%,
     rgba(14, 165, 233, 0.7) 50%,
     rgba(30, 58, 138, 0.8) 100%);
-    z-index: -1;
+    z-index: -1; */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 30%, transparent);
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
@@ -159,7 +176,7 @@ html {
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -179,9 +196,9 @@ html {
 }
 
 .title-secondary {
-    color: #1e3a8a;
+    color: var(--accent-color);
     font-size: 2.25rem;
-    font-weight: 500;
+    font-weight: 900;
     display: block;
     margin-top: 0.5rem;
 }
@@ -202,7 +219,7 @@ html {
 }
 
 .btn-cta {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     border: none;
     color: var(--white);
     font-weight: 600;
@@ -232,12 +249,12 @@ html {
 }
 
 .btn-outline-light.btn-secondary {
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     color: var(--white);
     font-weight: 600;
     padding: 0.875rem 2rem;
     border-radius: 50px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: var(--transition);
 }
@@ -386,8 +403,8 @@ html {
 }
 
 .icon-wrapper {
-    width: 60px;
-    height: 60px;
+    width: 160px;
+    height: 160px;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -415,6 +432,11 @@ html {
 }
 
 /* Service Cards */
+#services{
+    background: url(../images/monde-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .service-card {
     background: var(--white);
     padding: 2.5rem 2rem;
@@ -564,7 +586,9 @@ html {
 
 /* Stats Section */
 .stats-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: url(../images/monde-3.png), linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-size: cover;
+    background-position: center;
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -595,7 +619,7 @@ html {
 .stat-card {
     padding: 2rem 1rem;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: var(--transition);
@@ -703,7 +727,7 @@ html {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, var(--dark-gray) 0%, #374151 100%);
+    background: url(../images/footer-bg.png), linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     padding: 3rem 0 1.5rem;
 }
@@ -740,13 +764,13 @@ html {
 }
 
 .footer-links a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: var(--transition);
 }
 
 .footer-links a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .footer-contact li {
@@ -778,6 +802,7 @@ html {
 
     .title-secondary {
         font-size: 1.75rem;
+        color: var(--accent-color);
     }
 
     .hero-subtitle {
