@@ -2,9 +2,12 @@
 :root {
     --primary-color: #0c4a8e;
     --secondary-color: #00a3da;
-    --accent-color: #6699ff /*0d6efd*/;
+    --accent-color: #6699ff;
+    --accent-color-rgb: 102, 153, 255;
     --light-blue: #e0f2fe;
+    --light-blue-rgb: 224, 242, 254;
     --dark-blue: #003399;
+    --dark-blue-rgb: 0, 51, 153;
     --white: #ffffff;
     --light-gray: #f8fafc;
     --dark-gray: #1f2937;
@@ -115,6 +118,7 @@ html {
 
 /* Hero Section */
 .hero-section {
+    margin-top: 80px;
     position: relative;
     height: 100vh;
     display: flex;
@@ -558,7 +562,7 @@ html {
 }
 
 .mission-statement {
-    background: linear-gradient(135deg, var(--light-blue), #f0f9ff);
+    background: linear-gradient(135deg, rgba(var(--light-blue-rgb), 0.7), rgba(var(--accent-color-rgb), 0.3));
     padding: 3rem 2rem;
     border-radius: 20px;
     /*border: 1px solid var(--secondary-color);*/
@@ -889,6 +893,12 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .hero-section {
+        margin-top: 0;
+        /*height: auto;
+        padding: 2rem 0;*/
+    }
     .hero-title {
         font-size: 2.5rem;
     }
@@ -1050,6 +1060,7 @@ html {
     }
 
     .hero-section {
+        margin-top: 30px;
         height: auto;
         padding: 2rem 0;
     }
