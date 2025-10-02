@@ -10,6 +10,7 @@
 /public/Documents/
 /var/
 /vendor/
+qodana.yaml
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###

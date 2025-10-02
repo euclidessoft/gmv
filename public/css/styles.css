@@ -19,9 +19,9 @@
 
     --transition: all 0.3s ease;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0 0 0 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0 0 0 0.1);
-    --shadow-xl: 0 20px 25px -5px rgba(0 0 0 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-bottom: 1rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 
 a {
@@ -154,7 +154,7 @@ html {
     rgba(14, 165, 233, 0.7) 50%,
     rgba(30, 58, 138, 0.8) 100%);
     z-index: -1; */
-    background: linear-gradient(90deg, rgba(1, 16, 90, 0.7) 30%, transparent);
+    background: linear-gradient(90deg, rgba(2, 64, 113, 0.7) 30%, transparent);
     width: 100%;
     position: absolute;
     top: 0;
@@ -192,6 +192,7 @@ html {
     font-weight: 700;
     margin-bottom: 1.5rem;
     animation: fadeInUp 0.8s ease-out 0.4s both;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .title-primary {
@@ -373,7 +374,7 @@ html {
 
 .section-subtitle {
     font-size: 1.125rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
@@ -541,7 +542,7 @@ html {
 }
 
 .service-content p {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     line-height: 1.6;
     margin-bottom: 0;
 }

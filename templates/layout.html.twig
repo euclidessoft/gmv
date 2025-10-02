@@ -23,7 +23,7 @@
         <a class="navbar-brand fw-bold" href="#home">
             <span class="brand-text">GMV</span>
             <span class="brand-accent">ENGINEERING</span>
-{#            <img src="{{ asset('images/logo.png') }}" alt="" class="" height="50">#}
+            {#            <img src="{{ asset('images/logo.png') }}" alt="" class="" height="50"> #}
         </a>
 
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -58,7 +58,7 @@
 <!-- Hero Section -->
 <section id="home" class="hero-section">
     <div class="hero-bg">
-        <img src="{{ asset('images/hero-1.jpg') }}" alt="Aircraft Engineering" class="hero-image">
+        <img src="{{ asset('images/hero-1.avif') }}" alt="Aircraft Engineering" class="hero-image">
         <div class="hero-overlay"></div>
     </div>
 
@@ -220,7 +220,27 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-card h-100">
                     <div class="service-icon">
-                        <span class="icon-bg maintenance">🔧</span>
+                        <span class="icon-bg flight">
+                            <i class="fa-solid fa-gears"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h4>Maintenance systématique</h4>
+                        <p>
+                            Identification et remplacement des pièces usées ou défectueuses, inspection et nettoyage
+                            plus ajustements du moteur, inspection de la cellule (fuselage, ailes, etc.), vérification
+                            du bon fonctionnement du système électrique, hydraulique et avionique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card h-100">
+                    <div class="service-icon">
+                        <span class="icon-bg maintenance">
+                            <i class="fa-solid fa-wrench"></i>
+                        </span>
                     </div>
                     <div class="service-content">
                         <h4>Maintenance & Inspection</h4>
@@ -234,7 +254,9 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-card h-100">
                     <div class="service-icon">
-                        <span class="icon-bg flight">✈️</span>
+                        <span class="icon-bg flight">
+                            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i>
+                        </span>
                     </div>
                     <div class="service-content">
                         <h4>Ingénierie de Vol</h4>
@@ -247,7 +269,9 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-card h-100">
                     <div class="service-icon">
-                        <span class="icon-bg parts">📦</span>
+                        <span class="icon-bg parts">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </span>
                     </div>
                     <div class="service-content">
                         <h4>Vente de Pièces Aéronautiques</h4>
@@ -260,7 +284,9 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-card h-100">
                     <div class="service-icon">
-                        <span class="icon-bg repair">🛠️</span>
+                        <span class="icon-bg flight">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </span>
                     </div>
                     <div class="service-content">
                         <h4>Réparation & Gestion des Pièces</h4>
@@ -273,7 +299,9 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-card h-100">
                     <div class="service-icon">
-                        <span class="icon-bg testing">🔍</span>
+                        <span class="icon-bg parts">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
                     </div>
                     <div class="service-content">
                         <h4>Tests Préventifs</h4>
@@ -283,8 +311,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-card h-100 featured">
+            <div class="col-12 mb-4">
+                <div class="service-card h-100 featured text-center">
                     <div class="service-icon">
                         <span class="icon-bg why">💡</span>
                     </div>
@@ -454,7 +482,8 @@
                             <div class="form-floating">
                                 <select class="form-select" id="service">
                                     <option value="">Sélectionnez un service</option>
-                                    <option value="maintenance">Maintenance & Inspection</option>
+                                    <option value="maintenance">Maintenance systématique</option>
+                                    <option value="inspection">Maintenance & Inspection</option>
                                     <option value="flight">Ingénierie de Vol</option>
                                     <option value="parts">Vente de Pièces</option>
                                     <option value="repair">Réparation & Gestion</option>
@@ -464,11 +493,11 @@
                             </div>
                         </div>
                         <div class="mb-5">
-{#                            <div class="form-floating">#}
+                            {#                            <div class="form-floating"> #}
                             <textarea class="form-control" id="message" rows="5"
                                       placeholder="Décrivez votre projet ou vos besoins..."></textarea>
-                                <label for="message" class="form-label"></label>
-{#                            </div>#}
+                            <label for="message" class="form-label"></label>
+                            {#                            </div> #}
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary btn-cta">
