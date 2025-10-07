@@ -4,471 +4,497 @@
 
 {% block body %}
 
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <img src="{{ asset('images/hero-1.avif') }}" alt="Aircraft Engineering" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
 
-    <!--PreLoader Ends-->
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="hero-content">
+                        <h1 class="hero-title my-4">
+                            <span class="title-primary">GMV ENGINEERING</span>
+                        </h1>
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-lg-5">
-        <div id="header-carousel" class="carousel header-carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item position-relative active">
-                    <div class="carousel-img slide_1 animated fadeInLeft">
+                        <div class="hero-badge mb-4">
+                            <span class="badge-text">La référence en ingénierie aéronautique</span>
+                        </div>
+
+                        <h1 class="hero-title mb-4">
+                            <span class="title-secondary">Votre partenaire de confiance dans les cieux</span>
+                        </h1>
+
+                        <p class="hero-subtitle mb-5">
+                            Expertise technique de pointe pour la maintenance, l'inspection et la gestion complète de votre
+                            flotte aérienne. Chez GMV Engineering, nous conjuguons innovation, rigueur et sécurité pour
+                            garantir l'excellence opérationnelle de vos aéronefs.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#services" class="btn btn-primary btn-cta me-3">
+                                <span>Découvrez nos services</span>
+                                <i class="arrow-icon">→</i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-secondary">
+                                Contactez-nous
+                            </a>
+                        </div>
                     </div>
-                    <div class="carousel-overlay">
-                        <div class="container mt-md-5">
-                            <div class="row justify-content-center mt-md-5 text-center">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="fs-2 text-secondaire fw-bold mb-4 animated fadeInDownBig delay-05s">
-                                        {{ "Promotion médicale et pharmaceutique"|trans }}
-                                    </h1>
-                                    <div class="fs-5 text-white mb-4 pb-2 animated fadeInUpBig delay-05s">
-                                        <p class="paragraphe-1 mb-0">
-                                            {{ "Notre passion pour l'excellence médicale nous motive à redéfinir constamment les normes de l'industrie et à mettre la barre plus haut pour le bénéfice de tous."|trans }}
-                                        </p>
-                                        <p class="paragraphe-2">
-                                            {{ "Nous sommes bien plus qu'une entreprise, nous sommes des artisans de la santé, des guides de l'innovation et des catalyseurs du bien-être"|trans }}
-                                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="section-header">
+                        <span class="section-tag">À Propos</span>
+                        <h2 class="section-title">Notre Histoire & Notre Vision</h2>
+                    </div>
+
+                    <div class="content-text">
+                        <p class="lead">
+                            Fondée par des experts, <strong>GMV ENGINEERING</strong> s'impose comme un acteur de
+                            référence dans le secteur aéronautique.
+                        </p>
+
+                        <p>
+                            Notre mission est de fournir des solutions techniques intégrées, allant de l'ingénierie de vol à
+                            la vente de pièces détachées certifiées, en passant par la maintenance préventive et corrective.
+                        </p>
+
+                        <p>
+                            Notre structure solide, dotée d'une expertise technique importante et d'une vision à long
+                            terme, assure à nos partenaires une fiabilité et un engagement sans faille.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-image mb-4">
+                        <img src="{{ asset('images/46754.avif') }}" alt="GMV Engineering Team"
+                             class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="subsection-title text-center mb-5">Nos Valeurs</h3>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <div class="icon-wrapper security"><i class="fa-solid fa-shield-halved fa-4x"></i></div>
+                        </div>
+                        <h4>Sécurité</h4>
+                        <p>La priorité absolue dans chaque décision et chaque intervention.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <div class="icon-wrapper excellence"><i class="fa-solid fa-web-awesome fa-4x"></i></div>
+                        </div>
+                        <h4>Excellence</h4>
+                        <p>Une rigueur technique et un savoir-faire inégalé.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <div class="icon-wrapper integrity"><i class="fa-solid fa-handshake fa-4x"></i></div>
+                        </div>
+                        <h4>Intégrité</h4>
+                        <p>Des relations transparentes et honnêtes avec nos clients et fournisseurs.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <div class="icon-wrapper innovation"><i class="fa-solid fa-lightbulb fa-4x"></i></div>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>Une veille technologique constante pour des solutions toujours plus efficaces.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="leadership-section text-center">
+                        <h3 class="subsection-title mb-4">Notre Équipe de Direction</h3>
+                        <p class="lead">
+                            Dirigée par des professionnels expérimentés, notre gestion
+                            allie leadership éclairé et connaissance approfondie du terrain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="section-tag">Services</span>
+                    <h2 class="section-title">Une Offre de Services Complète et Intégrée</h2>
+                    <p class="section-subtitle">
+                        Chez GMV Engineering, nous comprenons que la disponibilité et la sécurité d'un aéronef reposent sur
+                        une multitude de facteurs. C'est pourquoi nous proposons une gamme de services synergiques pour
+                        couvrir tous vos besoins.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                        <span class="icon-bg flight">
+                            <i class="fa-solid fa-gears"></i>
+                        </span>
+                        </div>
+                        <div class="service-content">
+                            <h4>Maintenance systématique</h4>
+                            <p>
+                                Identification et remplacement des pièces usées ou défectueuses, inspection et nettoyage
+                                plus ajustements du moteur, inspection de la cellule (fuselage, ailes, etc.), vérification
+                                du bon fonctionnement du système électrique, hydraulique et avionique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                        <span class="icon-bg maintenance">
+                            <i class="fa-solid fa-wrench"></i>
+                        </span>
+                        </div>
+                        <div class="service-content">
+                            <h4>Maintenance & Inspection</h4>
+                            <p>Services complets de maintenance préventive et corrective, inspections régulières conformes
+                                aux réglementations en vigueur, et diagnostics avancés pour garantir la parfaite
+                                navigabilité de votre appareil.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                        <span class="icon-bg flight">
+                            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i>
+                        </span>
+                        </div>
+                        <div class="service-content">
+                            <h4>Ingénierie de Vol</h4>
+                            <p>Expertise technique spécialisée pour l'analyse des performances, la planification des vols,
+                                la gestion du poids et de l'équilibrage, et le support technique opérationnel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                        <span class="icon-bg parts">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </span>
+                        </div>
+                        <div class="service-content">
+                            <h4>Vente de Pièces Aéronautiques</h4>
+                            <p>Approvisionnement et distribution de pièces détachées d'origine et certifiées pour une large
+                                gamme d'aéronefs. Notre réseau logistique assure rapidité et traçabilité.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                        <span class="icon-bg flight">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </span>
+                        </div>
+                        <div class="service-content">
+                            <h4>Réparation & Gestion des Pièces</h4>
+                            <p>Réparation sur mesure de composants, gestion optimisée des stocks de pièces et support
+                                technique 24/7 pour minimiser les temps d'immobilisation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                        <span class="icon-bg parts">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        </div>
+                        <div class="service-content">
+                            <h4>Tests Préventifs</h4>
+                            <p>Mise en œuvre de programmes de tests et de contrôles non-destructifs pour anticiper les
+                                défaillances et assurer la continuité de service en toute sérénité.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="service-card h-100 featured text-center">
+                        <div class="service-icon">
+                            <span class="icon-bg why">💡</span>
+                        </div>
+                        <div class="service-content">
+                            <h4>Pourquoi choisir GMV Eng ?</h4>
+                            <ul class="why-list">
+                                <li>🔧 Expertise reconnue dans le secteur aéronautique</li>
+                                <li>⏱ Réactivité et flexibilité de nos équipes</li>
+                                <li>🧩 Solutions sur mesure adaptées à vos contraintes opérationnelles</li>
+                                <li>✅ Respect strict des normes de sécurité internationales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <div class="mission-statement">
+                        <h3 class="mb-3">Notre Mission</h3>
+                        <p class="lead">
+                            Garantir la sécurité, la fiabilité et la disponibilité maximale de vos aéronefs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section id="quality" class="section-padding bg-light-blue">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="quality-image">
+                        <img src="{{ asset('images/874.avif') }}" alt="Quality Standards"
+                             class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="quality-content">
+                        <span class="section-tag">Engagement Qualité</span>
+                        <h2 class="section-title mb-4">La Conformité comme Pilier</h2>
+
+                        <div class="quality-text">
+                            <p class="lead mb-4">
+                                Notre fonctionnement est strictement encadré par les dispositions de l'Acte Uniforme de
+                                l'OHADA relatif au droit commercial général.
+                            </p>
+
+                            <p class="mb-4">
+                                Cet ancrage juridique solide est le gage de notre sérieux, de notre transparence et de notre
+                                engagement à opérer dans le respect total des normes internationales et des législations
+                                locales.
+                            </p>
+
+                            <div class="quality-highlight">
+                                <div class="highlight-icon">✓</div>
+                                <div class="highlight-text">
+                                    <strong>Amélioration Continue</strong><br>
+                                    Nous nous engageons dans une démarche d'amélioration continue de nos processus pour
+                                    répondre aux exigences les plus strictes de l'industrie aéronautique.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section-padding stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="section-tag light">Chiffres Clés</span>
+                    <h2 class="section-title light">Bref Aperçu</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-number" data-target="25">10</div>
+                        <div class="stat-suffix">+ techniciens</div>
+                        <div class="stat-label">expérimentés disponibles</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-number" data-target="25">25 000 000</div>
+                        <div class="stat-suffix">M FCFA</div>
+                        <div class="stat-label">de capital social</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-number" data-target="100">100</div>
+                        <div class="stat-suffix">%</div>
+                        <div class="stat-label">de conformité aux normes</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-number" data-target="100">100</div>
+                        <div class="stat-suffix">% engagé</div>
+                        <div class="stat-label">pour votre satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Prêts à Décoller Ensemble ?</h2>
+                    <p class="section-subtitle">
+                        Vous cherchez un partenaire de confiance pour accompagner vos opérations aériennes ?<br>
+                        Discutons de votre projet et bâtissons ensemble l'avenir de votre flotte.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" required
+                                               placeholder="Nom complet">
+                                        <label for="name" class="form-label">Nom complet</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" required placeholder="Email">
+                                        <label for="email" class="form-label">Email</label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item position-relative">
-                    <div class="carousel-img slide_3 animated fadeInLeft">
-                    </div>
-                    <div class="carousel-overlay">
-                        <div class="container mt-md-5">
-                            <div class="row justify-content-center mt-md-5 text-center">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="fs-2 text-secondaire fw-bold mb-4 animated fadeInDownBig delay-05s">
-                                        {{ "Importation et stockage de produits pharmaceutiques"|trans }}
-                                    </h1>
-                                    <p class="fs-5 text-white mb-4 pb-2 animated fadeInUpBig delay-05s">
-                                        {{ "Nous prenons à cœur notre rôle essentiel dans la chaîne d'approvisionnement pharmaceutique en veillant à ce que chaque produit qui entre dans nos entrepôts soit traité avec le plus grand soin et la plus grande précision"|trans }}
-                                    </p>
-
+                            <div class="row">
+                                <div class="col-md-6 mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="company" placeholder="Entreprise">
+                                        <label for="company" class="form-label">Entreprise</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Téléphone">
+                                        <label for="phone" class="form-label">Téléphone</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item position-relative">
-                    <div class="carousel-img slide_2 animated fadeInLeft">
-                    </div>
-                    <div class="carousel-overlay">
-                        <div class="container mt-md-5">
-                            <div class="row justify-content-center mt-md-5 text-center">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="fs-2 text-secondaire fw-bold mb-4 animated fadeInDownBig delay-05s">
-                                        {{ "Distribution de produits pharmaceutiques"|trans }}
-                                    </h1>
-                                    <p class="fs-5 text-white mb-4 pb-2 animated fadeInUpBig delay-05s">
-                                        {{ "Nous nous engageons à jouer un rôle crucial dans la chaîne d'approvisionnement pharmaceutique en fournissant des solutions de distribution innovantes et fiables pour les laboratoires à travers le monde"|trans }}
-                                    </p>
+                            <div class="mb-5">
+                                <div class="form-floating">
+                                    <select class="form-select" id="service">
+                                        <option value="">Sélectionnez un service</option>
+                                        <option value="maintenance">Maintenance systématique</option>
+                                        <option value="inspection">Maintenance & Inspection</option>
+                                        <option value="flight">Ingénierie de Vol</option>
+                                        <option value="parts">Vente de Pièces</option>
+                                        <option value="repair">Réparation & Gestion</option>
+                                        <option value="testing">Tests Préventifs</option>
+                                    </select>
+                                    <label for="service" class="form-label">Service d'intérêt</label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" aria-label="Slide 1"
-                        class="active" aria-current="true"></button>
-                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-control">
-                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                        data-bs-slide="prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                        data-bs-slide="next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-    <!-- About Start -->
-    <div class="container-fluid py-5 mt-lg-5">
-        <div class="container mt-lg-5">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInRightBig text-center text-lg-end" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-lg-end pe-3 mb-5">
-                        {{ "Qui sommes-nous"|trans }}
-                    </h2>
-                    <p class="fs-5 mb-4">
-                        {{ "GNT PHARMA a évolué à partir d'une petite initiative locale, pour devenir l'un des noms les plus fiables, si ce n’est pas le plus fiable, dans l'industrie pharmaceutique, avec une portée nationale et même internationale."|trans }}
-                    </p>
-                    <p class="fs-5 mb-5">
-                        {{ "Depuis, GNT PHARMA s'est forgé une solide réputation en tant que leader de confiance dans le domaine de la distribution de produits pharmaceutiques."|trans }}
-                    </p>
-                    <a class="btn btn-primaire btn-effect p-3" href="{{ path('About') }}">
-                        {{ "En savoir plus ..."|trans }}
-                    </a>
-                </div>
-                <div class="col-lg-6 wow fadeInLeftBig" data-wow-delay="0.3s">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100 fit-cover"
-                             src="{{ asset('images/distribution_2.avif') }}" alt="A propos">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Metier Start -->
-    <div class="container-fluid py-5 mb-lg-5">
-        <div class="container mb-5">
-            <div class="text-center mb-5 mt-5 wow fadeInUp" data-wow-delay="0.1s">
-                <h2 class="section-title bg-white text-center text-secondaire px-3 mb-5">
-                    {{ "Nos métiers"|trans }}
-                </h2>
-            </div>
-            <div class="row g-5 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="metier-item">
-                        <div class="metier-item-inner">
-                            <div class="metier-item-front">
-                                <img class="img-fluid w-100" src="{{ asset('images/logistic_home.avif') }}"
-                                     alt="Logistique">
-                                <h2 class="metier-front-tittle p-5">
-                                    {{ "Logistique"|trans }}
-                                </h2>
+                            <div class="mb-5">
+                                {#                            <div class="form-floating"> #}
+                                <textarea class="form-control" id="message" rows="5"
+                                          placeholder="Décrivez votre projet ou vos besoins..."></textarea>
+                                <label for="message" class="form-label"></label>
+                                {#                            </div> #}
                             </div>
-                            <div class="metier-item-back px-5 py-4">
-                                <h3 class="metier-tittle">
-                                    {{ "Logistique"|trans }}
-                                </h3>
-                                <p class="metier-text">
-                                    {{ "Chez GNT PHARMA, nous prenons à cœur notre rôle essentiel dans la chaîne d'approvisionnement pharmaceutique, en veillant à ce que chaque produit qui entre dans nos entrepôts soit traité avec le plus grand soin et la plus grande précision."|trans }}
-                                </p>
-                                <a class="btn btn-primaire btn-effect" href="{{ path('Logistique') }}">
-                                    {{ "En savoir plus ..."|trans }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="metier-item">
-                        <div class="metier-item-inner">
-                            <div class="metier-item-front">
-                                <img class="img-fluid w-100" src="{{ asset('images/distribution_home.avif') }}"
-                                     alt="Distribution">
-                                <h2 class="metier-front-tittle p-5">
-                                    {{ "Distribution"|trans }}
-                                </h2>
-                            </div>
-                            <div class="metier-item-back px-5 py-4">
-                                <h3 class="metier-tittle">
-                                    {{ "Distribution"|trans }}
-                                </h3>
-                                <p class="metier-text">
-                                    {{ "Chez GNT PHARMA, nous nous engageons à jouer un rôle crucial dans la chaîne d'approvisionnement pharmaceutique en fournissant des solutions de distribution innovantes et fiables pour les laboratoires à travers le monde."|trans }}
-                                </p>
-                                <a class="btn btn-primaire btn-effect" href="{{ path('Distribution') }}">
-                                    {{ "En savoir plus ..."|trans }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="metier-item">
-                        <div class="metier-item-inner">
-                            <div class="metier-item-front">
-                                <img class="img-fluid w-100" src="{{ asset('images/promotion_home.avif') }}"
-                                     alt="Promotion">
-                                <h2 class="metier-front-tittle p-5">
-                                    {{ "Promotion"|trans }}
-                                </h2>
-                            </div>
-                            <div class="metier-item-back px-5 py-4">
-                                <h3 class="metier-tittle">
-                                    {{ "Promotion"|trans }}
-                                </h3>
-                                <p class="metier-text">
-                                    {{ "Notre passion pour l'excellence médicale nous motive à redéfinir constamment les normes de l'industrie et à mettre la barre plus haut pour le bénéfice de tous."|trans }}
-                                    {{ "Nous sommes bien plus qu'une entreprise, nous sommes des artisans de la santé"|trans }}
-                                </p>
-                                <a class="btn btn-primaire btn-effect" href="{{ path('Promotion') }}">
-                                    {{ "En savoir plus ..."|trans }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Metier End -->
-
-    <!-- Carriere Start -->
-    <div class="container-fluid carriere wow fadeInUp mb-lg-5" data-wow-delay="0.1s">
-        <div class="row">
-            <div class="col-lg-6 col-md-8">
-                <div class="row">
-                    <div class="carriere-inner my-5 py-3 pe-5 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="text-center mb-5 mt-5 wow fadeInLeft" data-wow-delay="0.3s">
-                            <h1 class="text-center text-white px-3">
-                                {{ "Carrière"|trans }}
-                            </h1>
-                        </div>
-                        <div class="ms-lg-5 ms-md-4 ms-3">
-                            <p class="fs-5 pe-5 wow fadeInLeft" data-wow-delay="0.5s">
-                                {{ "Chez GNT Pharma, nous croyons fermement que la réussite d'une entreprise repose sur une culture d'entreprise solide et sur le bien-être de ses employés."|trans }}
-                            </p>
-                            <p class="fs-5 pe-5 wow fadeInLeft" data-wow-delay="0.7s">
-                                {{ "Notre culture est façonnée par des valeurs fondamentales et une vision commune, créant un environnement de travail dynamique et positif où chaque employé peut s'épanouir."|trans }}
-                            </p>
                             <div class="text-center">
-                                <a class="btn btn-secondaire btn-effect mt-5 mb-5" href="{{ path('Carriere') }}">
-                                    {{ "Plus de détails ..."|trans }}
-                                </a>
+                                <button type="submit" class="btn btn-primary btn-cta">
+                                    <span>Envoyer le message</span>
+                                    <i class="arrow-icon">→</i>
+                                </button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div> <!-- row -->
-    </div>
-    <!-- Carriere End -->
 
-    {#    <!-- Actualite Start -->#}
-    {#    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">#}
-    {#        <div class="container">#}
-    {#            <div class="text-center mb-5 mt-5">#}
-    {#                <h2 class="section-title bg-white text-center text-secondaire px-3 mb-5">#}
-    {#                    {{ "Actualité"|trans }}#}
-    {#                </h2>#}
-    {#            </div>#}
-    {#            <div class="row g-5">#}
-    {#                <div class="col-md-6">#}
-    {#                    <div class="banner wow fadeInUp shadow" data-wow-delay="0.3s">#}
-    {#                        <div class="row">#}
-    {#                            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.5s">#}
-    {#                                <div class="h-100">#}
-    {#                                    <img class="img-fluid w-100 h-100 fit-cover"#}
-    {#                                         src="{{ asset('images/event_1.avif') }}" alt="">#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                            <div class="col-lg-8 text-center">#}
-    {#                                <h3 class="fw-bold mt-4 fs-4 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    {{ "Titre de l'article 1"|trans }}#}
-    {#                                </h3>#}
-    {#                                <p class="text-lg-start mt-3 px-3 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium#}
-    {#                                    cupiditate#}
-    {#                                    distinctio, dolor explicabo fugiat illo illum inventore minima necessitatibus#}
-    {#                                    possimus#}
-    {#                                </p>#}
-    {#                                <a class="btn btn-primaire btn-effect px-4 py-2 mt-lg-2 mt-3 mb-lg-3 mb-5 me-3 float-lg-end" href="#">#}
-    {#                                    {{ "En savoir plus ..."|trans }}#}
-    {#                                </a>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#                <div class="col-md-6">#}
-    {#                    <div class="banner wow fadeInUp shadow" data-wow-delay="0.3s">#}
-    {#                        <div class="row">#}
-    {#                            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.5s">#}
-    {#                                <div class="h-100">#}
-    {#                                    <img class="img-fluid w-100 h-100 fit-cover"#}
-    {#                                         src="{{ asset('images/event_2.avif') }}" alt="">#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                            <div class="col-lg-8 text-center">#}
-    {#                                <h3 class="fw-bold mt-4 fs-4 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    {{ "Titre de l'article 2"|trans }}#}
-    {#                                </h3>#}
-    {#                                <p class="text-lg-start mt-3 px-3 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium#}
-    {#                                    cupiditate#}
-    {#                                    distinctio, dolor explicabo fugiat illo illum inventore minima necessitatibus#}
-    {#                                    possimus#}
-    {#                                </p>#}
-    {#                                <a class="btn btn-primaire btn-effect px-4 py-2 mt-lg-2 mt-3 mb-lg-3 mb-5 me-3 float-lg-end" href="#">#}
-    {#                                    {{ "En savoir plus ..."|trans }}#}
-    {#                                </a>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#                <div class="col-md-6">#}
-    {#                    <div class="banner wow fadeInUp shadow" data-wow-delay="0.3s">#}
-    {#                        <div class="row">#}
-    {#                            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.5s">#}
-    {#                                <div class="h-100">#}
-    {#                                    <img class="img-fluid w-100 h-100 fit-cover"#}
-    {#                                         src="{{ asset('images/event_3.avif') }}" alt="">#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                            <div class="col-lg-8 text-center">#}
-    {#                                <h3 class="fw-bold mt-4 fs-4 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    {{ "Titre de l'article 3"|trans }}#}
-    {#                                </h3>#}
-    {#                                <p class="text-lg-start mt-3 px-3 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium#}
-    {#                                    cupiditate#}
-    {#                                    distinctio, dolor explicabo fugiat illo illum inventore minima necessitatibus#}
-    {#                                    possimus#}
-    {#                                </p>#}
-    {#                                <a class="btn btn-primaire btn-effect px-4 py-2 mt-lg-2 mt-3 mb-lg-3 mb-5 me-3 float-lg-end" href="#">#}
-    {#                                    {{ "En savoir plus ..."|trans }}#}
-    {#                                </a>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#                <div class="col-md-6">#}
-    {#                    <div class="banner wow fadeInUp shadow" data-wow-delay="0.3s">#}
-    {#                        <div class="row">#}
-    {#                            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.5s">#}
-    {#                                <div class="h-100">#}
-    {#                                    <img class="img-fluid w-100 h-100 fit-cover"#}
-    {#                                         src="{{ asset('images/event_4.avif') }}" alt="">#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                            <div class="col-lg-8 text-center">#}
-    {#                                <h3 class="fw-bold mt-4 fs-4 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    {{ "Titre de l'article 4"|trans }}#}
-    {#                                </h3>#}
-    {#                                <p class="text-lg-start mt-3 px-3 wow fadeInRight" data-wow-delay="0.7s">#}
-    {#                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium#}
-    {#                                    cupiditate#}
-    {#                                    distinctio, dolor explicabo fugiat illo illum inventore minima necessitatibus#}
-    {#                                    possimus#}
-    {#                                </p>#}
-    {#                                <a class="btn btn-primaire btn-effect px-4 py-2 mt-lg-2 mt-3 mb-lg-3 mb-5 me-3 float-lg-end" href="#">#}
-    {#                                    {{ "En savoir plus ..."|trans }}#}
-    {#                                </a>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#        </div>#}
-    {#    </div>#}
-    {#    <!-- Actualite End -->#}
-    <!-- Equipe dirigeante Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center mb-5 mt-5">
-                <h2 class="section-title bg-white text-center text-secondaire px-3 mb-5">
-                    {{ "Equipe dirigeante"|trans }}
-                </h2>
-                <div class="row gy-5">
-                    <div class="col-lg-3 col-md-6 tab-bloc">
-                        <div class="bloc-team wow animated fadeInUp" data-wow-delay="0.1s">
-                            <div class="bloc-team-img">
-                                <img src="{{ asset ('images/Michel.avif') }}" alt="">
-                            </div>
-                            <div class="bloc-team-text">
-                                <h4>Michel Yawat</h4>
-                                <h6>{{'Directeur Général'|trans}}</h6>
-                            </div>
-                            <div class="bloc-team-icon">
-                                <a href="https://www.facebook.com/yawatdjogang.anselmemichel" target="_blank">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com/dr_ydam_anselme_michel" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="https://twitter.com/MichelYawat" target="_blank">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/anselme-michel-yawat-djogang-a89a3430" target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
+            <!-- Contact Info -->
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info-card text-center">
+                        <div class="contact-icon"><i class="fa fa-location-dot fa-3x"></i></div>
+                        <h5>Adresse</h5>
+                        <p>
+                            GMV ENGINEERING SARL<br>
+                            Siège Social : Yaoundé – Essos Marché<br>
+                            B.P. : 3.582 Yaoundé - Cameroun
+                        </p>
                     </div>
-                    <div class="col-lg-3 col-md-6 tab-bloc">
-                        <div class="bloc-team wow animated fadeInUp" data-wow-delay="0.3s">
-                            <div class="bloc-team-img">
-                                <img src="{{ asset ('images/avatar-homme.avif') }}" alt="">
-                            </div>
-                            <div class="bloc-team-text">
-                                <h4>Prénom Nom</h4>
-                                <h6>{{ 'Directeur Commercial'|trans }}</h6>
-                            </div>
-                            <div class="bloc-team-icon">
-                                <a href="#">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info-card text-center">
+                        <div class="contact-icon"><i class="fa fa-at fa-3x"></i></div>
+                        <h5>Email</h5>
+                        <p>
+                            <a href="mailto:contact@gmvengineering.com">contact@gmvengineering.com</a>
+                        </p>
                     </div>
-                    <div class="col-lg-3 col-md-6 tab-bloc">
-                        <div class="bloc-team wow animated fadeInUp" data-wow-delay="0.5s">
-                            <div class="bloc-team-img">
-                                <img src="{{ asset ('images/avatar-homme.avif') }}" alt="">
-                            </div>
-                            <div class="bloc-team-text">
-                                <h4>Prénom Nom</h4>
-                                <h6>{{ 'Directeur Marketing'|trans }}</h6>
-                            </div>
-                            <div class="bloc-team-icon">
-                                <a href="#">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 tab-bloc">
-                        <div class="bloc-team wow animated fadeInUp" data-wow-delay="0.7s">
-                            <div class="bloc-team-img">
-                                <img src="{{ asset ('images/avatar-femme.avif') }}" alt="">
-                            </div>
-                            <div class="bloc-team-text">
-                                <h4>Prénom Nom</h4>
-                                <h6>{{ 'Ressources humaines'|trans }}</h6>
-                            </div>
-                            <div class="bloc-team-icon">
-                                <a href="#">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info-card text-center">
+                        <div class="contact-icon"><i class="fa fa-square-phone fa-3x"></i></div>
+                        <h5>Téléphone</h5>
+                        <p>
+                            (+237) XXX XXX XXX<br>
+                            <small>Du lundi au vendredi<br>8h00 - 17h00</small>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Equipe dirigeante End -->
+    </section>
+
 {% endblock %}
