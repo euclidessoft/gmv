@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>GMV ENGINEERING - La référence en ingénierie aéronautique</title>
+    <title>
+        {% block title %} GMV ENGINEERING - La référence en ingénierie aéronautique {% endblock %}
+    </title>
     <meta name="description"
           content="GMV ENGINEERING - Expertise technique de pointe pour la maintenance, l'inspection et la gestion complète de votre flotte aérienne au Cameroun.">
 
@@ -15,6 +17,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
           rel="stylesheet">
+    {% block style %}
+    {% endblock %}
 </head>
 <body>
 <!-- Navigation -->
@@ -33,22 +37,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Accueil</a>
+                    <a class="nav-link {% block home %}{% endblock %}" href="#home">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">À Propos</a>
+                    <a class="nav-link {% block about %}{% endblock %}" href="#about">À Propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link {% block services %}{% endblock %}" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#quality">Qualité</a>
+                    <a class="nav-link {% block quality %}{% endblock %}" href="#quality">Qualité</a>
                 </li>
+                {#<li class="nav-item">
+                    <a class="nav-link {% block stats %}{% endblock %}" href="#stats">Chiffres</a>
+                </li>#}
                 <li class="nav-item">
-                    <a class="nav-link" href="#stats">Chiffres</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link {% block contact %}{% endblock %}" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -95,7 +99,12 @@
                 <ul class="footer-contact">
                     <li><i class="fa fa-location-dot fa-lg"></i> Yaoundé – Essos Marché</li>
                     <li><i class="fa-solid fa-at fa-lg"></i> contact@gmvengineering.com</li>
-                    <li><i class="fa-solid fa-square-phone fa-lg"></i> (+237) XXX XXX XXX</li>
+                    <li><i class="fa-solid fa-square-phone fa-lg"></i>
+                        <a class="text-white" href="tel:+971523071828">+ 971 523 071 828</a>
+                    </li>
+                    <li><i class="fa-solid fa-square-phone fa-lg"></i>
+                        <a class="text-white" href="tel:+236677700109">+ 236 677 700 109</a>
+                    </li>
                 </ul>
             </div>
         </div>
